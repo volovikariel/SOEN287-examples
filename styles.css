@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+}
+
+body > h1 {
+  text-align: center;
+}
+
+body > div:not(:empty)::after,
+body > h1::after {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 1px;
+  background: black;
+}
