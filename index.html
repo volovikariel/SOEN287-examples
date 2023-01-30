@@ -5,23 +5,155 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Lec 2</h1>
-    <div>Quote: <q>Once upon a time, there was a king...</q></div>
-    <div>
-      Block quote:
-      <blockquote>Once upon a time, there was a king...</blockquote>
-    </div>
-    <div><b>bold</b> text</div>
-    <div><i>italic</i> text</div>
-    <div><u>underlined</u> text</div>
-    <div><strong>strong</strong> text</div>
-    <div><small>smoll</small> text</div>
-    <div><em>emphasized</em> text</div>
-    <div>x<sub>subscript</sub></div>
-    <div>x<sup>superscript</sup></div>
-    <div><del>deleted</del> text</div>
-    <div><mark>highlighted</mark> text</div>
-    <div><code>code-like</code> text</div>
-    <div><progress value="35" max="100"></progress> progress bar (35/100)</div>
+    <a href="#lec2">Go to Lec 2</a>
+    <a href="#lec3">Go to Lec 3</a>
+    <details id="lec2">
+      <summary>Lecture 2</summary>
+      <fieldset>
+        <div>Quote: <q>Once upon a time, there was a king...</q></div>
+        <div>
+          Block quote:
+          <blockquote>Once upon a time, there was a king...</blockquote>
+        </div>
+        <div><b>bold</b> text</div>
+        <div><i>italic</i> text</div>
+        <div><u>underlined</u> text</div>
+        <div><strong>strong</strong> text</div>
+        <div><small>smoll</small> text</div>
+        <div><em>emphasized</em> text</div>
+        <div>x<sub>subscript</sub></div>
+        <div>x<sup>superscript</sup></div>
+        <div><del>deleted</del> text</div>
+        <div><mark>highlighted</mark> text</div>
+        <div><code>code-like</code> text</div>
+        <div>
+          <progress value="35" max="100"></progress> progress bar (35/100)
+        </div>
+      </fieldset>
+    </details>
+    <details id="lec3" open="open">
+      <summary>Lecture 3</summary>
+      <fieldset>
+        <div>An <abbr title="Abbreviation">abbr</abbr></div>
+        <div>
+          <address>
+            An addresses' line one<br />
+            And line two <br />
+          </address>
+        </div>
+        <div>
+          <audio
+            src="assets/liquid-gold-glbml.mp3"
+            type="audio/mp3"
+            controls
+          ></audio>
+        </div>
+        <div>
+          <video height="200px" controls>
+            <source src="assets/magic-sphere.mp4" type="video/mp4" />
+            <track
+              kind="captions"
+              srclang="en"
+              src="assets/magic-sphere.vtt"
+              default
+            />
+            <!--You need to run `npx serve` to have the .vtt resource load, or use the live server extension on VSCode-->
+          </video>
+        </div>
+        <div>
+          <object
+            data="https://www.youtube.com/embed/WRh_mCxd3UY"
+            width="420"
+            height="315"
+          >
+            Embedding the minion's banana song onto the page
+          </object>
+        </div>
+        <div><button type="button">Button name</button></div>
+        <div><button type="button" disabled>Disabled button</button></div>
+        <div>
+          <details>
+            <summary>A detail's summary</summary>
+            <p>Open by default because of the open attribute!</p>
+          </details>
+        </div>
+        <div>
+          <fieldset form="form-id" disabled>
+            <legend>Disabled fieldset form</legend>
+            <form id="form-id">
+              <button>Click me to submit something!</button>
+            </form>
+          </fieldset>
+        </div>
+        <div>
+          This is an img tag
+          <img src="assets/giraffe.png" alt="This is alternate text" />
+        </div>
+        <div>
+          Click on the giraffe's head and tail, this is an image map!
+          <map name="giraffe-map" id="giraffe-map">
+            <area
+              shape="rectangle"
+              coords="0,0,65,50"
+              href="https://en.wikipedia.org/wiki/Head"
+              target="_blank"
+              alt="Head (Wikipedia)"
+            />
+            <area
+              shape="rectangle"
+              coords="80,60,120,100"
+              href="https://en.wikipedia.org/wiki/Tail"
+              target="_blank"
+              alt="Tail (Wikipedia)"
+            />
+          </map>
+          <img
+            usemap="#giraffe-map"
+            src="assets/giraffe.png"
+            alt="Explore anatomy with a giraffe"
+          />
+        </div>
+        <div>
+          <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            >Anchor tag</a
+          >
+        </div>
+        <div>
+          <dt>Description-list title</dt>
+          <dd>
+            Description-list content escription
+            <dl>
+              <dt>Data 1 title</dt>
+              <dd>Data 1 data (3.14159265358979...)</dd>
+              <dt>Data 2 title</dt>
+              <dd>2.71</dd>
+            </dl>
+          </dd>
+        </div>
+        <div>
+          Unordered list, weee!!!
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+          </ul>
+        </div>
+        <div>
+          Ordered list, weee!!!
+          <ol>
+            <li>first thingy</li>
+            <li>second thingy</li>
+            <li>etc</li>
+          </ol>
+        </div>
+        <div>
+          <p>You can select multiple by clicking control or holding shift.</p>
+          <select multiple="multiple" required="required" size="2">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+          </select>
+        </div>
+      </fieldset>
+    </details>
   </body>
 </html>

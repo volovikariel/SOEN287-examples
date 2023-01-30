@@ -3,12 +3,11 @@ body {
   font-size: 1.3em;
 }
 
-body > h1 {
+h1 {
   text-align: center;
 }
 
-body > div:not(:empty)::after,
-body > h1::after {
+fieldset > div:not(:empty)::after {
   content: "";
   display: block;
   width: 100vw;
